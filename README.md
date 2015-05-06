@@ -17,7 +17,7 @@ btw: 必須要說，雖然ng-material比較差，但是在眾多同類框架中�
 2. ng-material-dropmenu.less must load after angular-material.css
 3. html code
       
-      ```
+      ```html
       <md-dropmenu>
         <md-drop-label>
           <md-button>
