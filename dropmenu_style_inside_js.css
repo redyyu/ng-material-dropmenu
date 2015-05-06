@@ -1,0 +1,14 @@
+md-drop-menu.md-THEME_NAME-theme md-drop-optgroup {
+  color: '{{foreground-2}}'; }
+  md-drop-menu.md-THEME_NAME-theme md-drop-optgroup md-drop-option {
+    color: '{{foreground-1}}'; }
+md-drop-menu.md-THEME_NAME-theme md-drop-option[selected] {
+  color: '{{primary-500}}'; }
+  md-drop-menu.md-THEME_NAME-theme md-drop-option[selected]:focus {
+    color: '{{primary-600}}'; }
+  md-drop-menu.md-THEME_NAME-theme md-drop-option[selected].md-accent {
+    color: '{{accent-500}}'; }
+    md-drop-menu.md-THEME_NAME-theme md-drop-option[selected].md-accent:focus {
+      color: '{{accent-600}}'; }
+md-drop-menu.md-THEME_NAME-theme md-drop-option:focus:not([selected]) {
+  background: '{{background-200}}'; }
