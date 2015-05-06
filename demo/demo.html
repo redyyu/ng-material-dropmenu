@@ -1,0 +1,30 @@
+<html>
+<head>
+<link rel="stylesheet" href="angular-material.min.css">
+<link rel="stylesheet" href="../ng-material-dropmenu.css">
+</head>
+<body ng-app="testApp">
+  <md-dropmenu>
+    <md-drop-label>
+      <md-button class="md-raised md-primary">
+        Button
+      </md-button>
+    </md-drop-label>
+    <md-drop-option>Option #1</md-drop-option>
+    <md-drop-optgroup label="Option Group 2">
+      <md-drop-option>Option #2-1</md-drop-option>
+      <md-drop-option>Option #2-2</md-drop-option>
+    </md-drop-optgroup>
+    
+  </md-dropmenu>
+  <!-- Angular Material Dependencies -->
+  <script src="angular.min.js"></script>
+  <script src="angular-animate.min.js"></script>
+  <script src="angular-aria.min.js"></script>
+  <!-- Angular Material Javascript now available via Google CDN; version 0.8 used here -->
+  <script src="angular-material.min.js"></script>
+  
+  <script src="../ng-material-dropmenu.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

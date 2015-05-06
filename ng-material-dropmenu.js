@@ -1,6 +1,6 @@
 /*!
  * Dropmenu for Angular Material Design
- * https://github.com/angular/material
+ * https://github.com/Soopro/ng-material-dropmenu
  * @license MIT
  */
 (function () {
@@ -904,7 +904,7 @@ function DropProvider($$interimElementProvider) {
 
       var optionNodes = opts.selectEl[0]
                         .getElementsByTagName('md-drop-option');
-
+      // console.log(opts.selectEl[0], optionNodes);
       if (opts.loadingAsync && opts.loadingAsync.then) {
         opts.loadingAsync.then(function() {
           scope.$$loadingAsyncDone = true;
@@ -1130,9 +1130,10 @@ function DropProvider($$interimElementProvider) {
         centeredRect.paddingLeft = parseInt(centeredStyle.paddingLeft, 10) || 0;
         centeredRect.paddingRight = parseInt(centeredStyle.paddingRight, 10) || 0;
       }
-
+      
       var focusedNode = centeredNode;
-      if ((focusedNode.tagName || '').toUpperCase() === 'MD-OPTGROUP') {
+      // console.log(focusedNode);
+      if ((focusedNode.tagName || '').toUpperCase() === 'MD-DROP-OPTGROUP') {
         focusedNode = optionNodes[0] || contentNode.firstElementChild || contentNode;
       }
 

@@ -1,0 +1,1 @@
+angular.module('testApp', ['ngAnimate', 'ngMaterial','ngMaterialDropmenu']);

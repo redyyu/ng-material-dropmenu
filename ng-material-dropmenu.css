@@ -41,10 +41,10 @@ md-input-container > md-dropmenu {
 
 md-dropmenu {
   display: inline-block;
-  // margin-top: 0.35em;
+/*  // margin-top: 0.35em;
   // margin-bottom: 0.8em;
   // margin-left: 2px;
-  // margin-right: 2px;
+  // margin-right: 2px;*/
   }
   md-dropmenu:focus {
     outline: none; }
@@ -52,16 +52,16 @@ md-dropmenu {
     cursor: default; }
   md-dropmenu:not([disabled]):hover {
     cursor: pointer; }
-  // md-dropmenu:not([disabled]).ng-invalid.ng-dirty .md-drop-label {
+/*  // md-dropmenu:not([disabled]).ng-invalid.ng-dirty .md-drop-label {
   //   padding-bottom: 7px;
   //   // border-bottom: 2px solid;
   // }
   // md-dropmenu:not([disabled]):focus .md-drop-label {
   //   border-bottom: 2px solid;
   //   padding-bottom: 7px;
-  // }
+  // }*/
 
-// .md-drop-label {
+/*// .md-drop-label {
 //   display: -webkit-flex;
 //   display: -ms-flexbox;
 //   display: flex;
@@ -97,7 +97,7 @@ md-dropmenu {
 //     top: 2px;
 //     speak: none;
 //     -webkit-transform: scaleY(0.6) scaleX(1);
-//             transform: scaleY(0.6) scaleX(1); }
+//             transform: scaleY(0.6) scaleX(1); }*/
 
 md-drop-menu {
   display: -webkit-flex;
