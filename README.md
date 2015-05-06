@@ -16,18 +16,20 @@ btw: 必須要說，雖然ng-material比較差，但是在眾多同類框架中�
 1. ng-material-dropmenu.js must load after angular-material.js (ngMaterial)
 2. ng-material-dropmenu.less must load after angular-material.css
 3. html code
-  ```
-  <md-dropmenu>
-    <md-drop-label>
-      <md-button>
-        Button
-      </md-button>
-    </md-drop-label>
-    <md-drop-optgroup label="Option Group 1">
-      <md-drop-option>Option #1-1</md-drop-option>
-      <md-drop-option>Option #1-2</md-drop-option>
-    </md-drop-optgroup>
-    <md-drop-option>Option #2</md-drop-option>
-  </md-dropmenu>
-  ```
+      
+      ```
+      <md-dropmenu>
+        <md-drop-label>
+          <md-button>
+            Button
+          </md-button>
+        </md-drop-label>
+        <md-drop-optgroup label="Option Group 1">
+          <md-drop-option>Option #1-1</md-drop-option>
+          <md-drop-option>Option #1-2</md-drop-option>
+        </md-drop-optgroup>
+        <md-drop-option>Option #2</md-drop-option>
+      </md-dropmenu>
+      ```
+
 4. you can add ng-click on md-drop-option or change anything in side md-drop-label for custom your dropbtn
