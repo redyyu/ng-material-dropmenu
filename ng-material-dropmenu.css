@@ -7,7 +7,9 @@ Author:   redy
 Date:     28 April 2015
 Version:  1.5.1-beta.2
 ----------------------------------------------- */
-
+md-backdrop.md-dropmenu-backdrop {
+  z-index: 91;
+}
 .md-drop-menu-container {
   position: fixed;
   left: 0;

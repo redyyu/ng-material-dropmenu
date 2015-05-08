@@ -882,7 +882,7 @@ function DropProvider($$interimElementProvider) {
         selectEl: element.find('md-drop-menu'),
         contentEl: element.find('md-content'),
         backdrop: opts.hasBackdrop && angular.element(
-          '<md-backdrop class="md-drop-backdrop md-click-catcher">'
+          '<md-backdrop class="md-dropmenu-backdrop md-click-catcher">'
         )
       });
 
