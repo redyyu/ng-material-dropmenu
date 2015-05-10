@@ -4,7 +4,7 @@
     "./ng-material-dropmenu.css",
     "./ng-material-dropmenu.js"
   ],
-  "version": "0.0.2",
+  "version": "0.0.3",
   "homepage": "https://github.com/Soopro/ng-material-dropmenu",
   "authors": [
     "Redy <redy@soopro.com>"

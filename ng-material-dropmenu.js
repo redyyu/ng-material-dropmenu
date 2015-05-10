@@ -923,9 +923,9 @@ function DropProvider($$interimElementProvider) {
         var fakeOption = document.createElement("md-drop-option");
         var parentE = optionNodes[0].parentElement;
         // fakeOption.style.visibility = "hidden";
-        fakeOption.style.height = "0";
+        fakeOption.style.height = "1px";
         fakeOption.style.width = "0";
-        fakeOption.style.maxHeight = "0";
+        fakeOption.style.maxHeight = "1px";
         fakeOption.style.maxWidth = "0";
         fakeOption.setAttribute("tabindex", "0");
         fakeOption.setAttribute("fake", true);

@@ -1,7 +1,7 @@
 <html>
 <head>
 <link rel="stylesheet" href="angular-material.min.css">
-<link rel="stylesheet" href="../ng-material-dropmenu.css">
+<link rel="stylesheet" href="../ng-material-dropmenu.min.css">
 </head>
 <body ng-app="testApp">
   <md-dropmenu>
@@ -15,6 +15,16 @@
       <md-drop-option>Option #2-1</md-drop-option>
       <md-drop-option>Option #2-2</md-drop-option>
     </md-drop-optgroup>
+    <md-drop-option>Option #1</md-drop-option>
+    <md-drop-optgroup label="Option Group 2">
+      <md-drop-option>Option #2-1</md-drop-option>
+      <md-drop-option>Option #2-2</md-drop-option>
+    </md-drop-optgroup>
+    <md-drop-option>Option #1</md-drop-option>
+    <md-drop-optgroup label="Option Group 2">
+      <md-drop-option>Option #2-1</md-drop-option>
+      <md-drop-option>Option #2-2</md-drop-option>
+    </md-drop-optgroup>
   </md-dropmenu>
   
   <md-dropmenu disabled-auto-focus>
@@ -23,7 +33,8 @@
         Disabled Auto Focus
       </md-button>
     </md-drop-label>
-    <md-drop-option>Option #1</md-drop-option>
+    <md-drop-option>Option #1-1</md-drop-option>
+    <md-drop-option>Option #1-2</md-drop-option>
     <md-drop-optgroup label="Option Group 2">
       <md-drop-option>Option #2-1</md-drop-option>
       <md-drop-option>Option #2-2</md-drop-option>
@@ -49,10 +60,10 @@
   </md-dropmenu>
   <div style="dsiplay:block;width:100px;height:600px;">
   </div>
-  <md-dropmenu disabled-auto-focus>
+  <md-dropmenu>
     <md-drop-label>
       <md-button href="#" class="md-raised md-primary">
-        Disabled Auto Focus
+        Drop href button
       </md-button>
     </md-drop-label>
     <md-drop-option>Option #1</md-drop-option>
@@ -68,7 +79,7 @@
   <!-- Angular Material Javascript now available via Google CDN; version 0.8 used here -->
   <script src="angular-material.min.js"></script>
   
-  <script src="../ng-material-dropmenu.js"></script>
+  <script src="../ng-material-dropmenu.min.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
