@@ -215,7 +215,7 @@ function DropmenuDirective($mdDropmenu, $mdUtil, $mdTheming, $mdAria, $interpola
   };
 
   function compile(element, attr) {
-    // The user is allowed to provide a label for the select as md-drop-label child
+    // The user is allowed to provide a label for the dropmenu as md-drop-label child
     var labelEl = element.find('md-drop-label').remove();
     // If not provided, we automatically make one
     if (!labelEl.length) {
@@ -397,7 +397,7 @@ function DropmenuDirective($mdDropmenu, $mdUtil, $mdTheming, $mdAria, $interpola
         element.on('click', openSelect);
         element.on('keydown', handleKeypress);
       }
-
+      
       element.attr({
         'role': 'combobox',
         'id': 'dropmenu_' + $mdUtil.nextUid(),
@@ -451,11 +451,13 @@ function DropmenuDirective($mdDropmenu, $mdUtil, $mdTheming, $mdAria, $interpola
 //         }
       }
 
-      function openSelect() {
+      function openSelect(e) {
         scope.$evalAsync(function() {
-          var loading;
+          var loading, autoFocus;
           isOpen = true;
           loading = attr.mdOnOpen ? scope.$eval(attr.mdOnOpen) || true : false
+          autoFocus = angular.isDefined(attr.disabledAutoFocus) ? false : true
+          
           $mdDropmenu.show({
             scope: selectScope,
             preserveScope: true,
@@ -464,10 +466,13 @@ function DropmenuDirective($mdDropmenu, $mdUtil, $mdTheming, $mdAria, $interpola
             target: element[0],
             hasBackdrop: true,
             loadingAsync: loading,
+            autoFocus: autoFocus,
           }).then(function(selectedText) {
             isOpen = false;
           });
         });
+        // prevnet page scroll to top while use a href="#"
+        e.preventDefault();
       }
     };
   }
@@ -904,6 +909,23 @@ function DropProvider($$interimElementProvider) {
 
       var optionNodes = opts.selectEl[0]
                         .getElementsByTagName('md-drop-option');
+      
+      // create fake option for auto focus disabled
+      if(!opts.autoFocus && optionNodes.length > 0 && !optionNodes[0].getAttribute("fake")){
+        var fakeOption = document.createElement("md-drop-option");
+        var parentE = optionNodes[0].parentElement;
+        // fakeOption.style.visibility = "hidden";
+        fakeOption.style.height = "0";
+        fakeOption.style.width = "0";
+        fakeOption.style.maxHeight = "0";
+        fakeOption.style.maxWidth = "0";
+        fakeOption.setAttribute("tabindex", "0");
+        fakeOption.setAttribute("fake", true);
+        parentE.insertBefore(fakeOption, optionNodes[0]);
+        optionNodes = opts.selectEl[0].getElementsByTagName('md-drop-option');
+      }
+      
+      
       // console.log(opts.selectEl[0], optionNodes);
       if (opts.loadingAsync && opts.loadingAsync.then) {
         opts.loadingAsync.then(function() {
@@ -999,7 +1021,6 @@ function DropProvider($$interimElementProvider) {
             //   }
           }
         });
-
 
         function focusOption(direction) {
           var optionsArray = nodesToArray(optionNodes);
@@ -1186,7 +1207,6 @@ function DropProvider($$interimElementProvider) {
         Math.min(targetRect.width / selectMenuRect.width, 1.0) + ',' +
         Math.min(targetRect.height / selectMenuRect.height, 1.0) +
       ')';
-
 
       $$rAF(function() {
         element.addClass('md-active');
