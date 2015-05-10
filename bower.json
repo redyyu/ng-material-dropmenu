@@ -10,9 +10,6 @@
     "Redy <redy@soopro.com>"
   ],
   "description": "For temporary use before official angular dropdown menu release.",
-  "moduleType": [
-    "amd"
-  ],
   "keywords": [
     "angular",
     "material",
