@@ -43,3 +43,9 @@ btw: 必須要說，雖然ng-material比較差，但是在眾多同類框架中�
 4. you can add ng-click on md-drop-option or change anything in side md-drop-label for custom your dropbtn
 
 
+## Installation
+from bower：
+
+```
+bower install ng-material-dropmenu
+```

@@ -1,8 +1,8 @@
 {
   "name": "ng-material-dropmenu",
   "main": [
-    "ng-material-dropmenu.css",
-    "ng-material-dropmenu.js"
+    "./ng-material-dropmenu.css",
+    "./ng-material-dropmenu.js"
   ],
   "version": "0.0.2",
   "homepage": "https://github.com/Soopro/ng-material-dropmenu",
@@ -10,9 +10,6 @@
     "Redy <redy@soopro.com>"
   ],
   "description": "For temporary use before official angular dropdown menu release.",
-  "moduleType": [
-    "amd"
-  ],
   "keywords": [
     "angular",
     "material",

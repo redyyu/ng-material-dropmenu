@@ -40,6 +40,14 @@ function colorToRgbaArray(clr) {
   return [parseInt(red, 16), parseInt(grn, 16), parseInt(blu, 16)];
 }
 
+/**
+ * @ngdoc module
+ * @name ngMaterialDropmenu
+ * @description
+ *
+ * # ngMaterialDropmenu
+ *
+ */
 
 angular.module('ngMaterialDropmenu', [
   'material.core',
