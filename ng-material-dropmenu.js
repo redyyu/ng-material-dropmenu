@@ -927,6 +927,7 @@ function DropProvider($$interimElementProvider) {
         fakeOption.style.width = "0";
         fakeOption.style.maxHeight = "1px";
         fakeOption.style.maxWidth = "0";
+        fakeOption.style.opacity = "0";
         fakeOption.setAttribute("tabindex", "0");
         fakeOption.setAttribute("fake", true);
         parentE.insertBefore(fakeOption, optionNodes[0]);
