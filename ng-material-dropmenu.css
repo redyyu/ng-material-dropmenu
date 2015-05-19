@@ -164,6 +164,12 @@ md-drop-optgroup {
   md-drop-optgroup md-drop-option {
     padding-left: 24px; }
 
+md-drop-option[disabled] {
+  cursor: default;
+  pointer-events: none;
+  opacity: 0.56;
+}
+
 @media screen and (-ms-high-contrast: active) {
   .md-drop-backdrop {
     background-color: transparent; 
