@@ -1,3 +1,5 @@
+# for ng-material 0.9.6.
+
 # ng-material-dropmenu
 
 I heard the official dropmenu will release at 0.10.0, but I also heard the official version always delay.
@@ -5,7 +7,7 @@ There is a rough ngMaterial module cottaged from ng-select, For temporary use be
 
 This module is Keyborad sensitive and has backdrop support, just like ng-select, but no ng-model support.
 
-You must have ng-material 0.9.0 or above.
+You must have ng-material 0.9.6.
 
 Demo is in the package.
 
@@ -13,7 +15,7 @@ Demo is in the package.
 聽說他們官方的大爺們會在0.10.0推出下拉菜單，0.8到0.9用了幾個月，我等不及了於是山寨了這個，你們要是也等不及可以用這個湊合用用先。不過ng-material那麼坑的項目我估計沒有幾個月你們也不一定可以搞出成果。
 btw: 必須要說，雖然ng-material比較差，但是在眾多同類框架中，它差的很穩定，於是我們的項目最後還是確定選用這個框架。
 
-這個需要 0.9.0 以上版本支持，不要指望IE(<10)之類的瀏覽器能夠完美支持。
+這個需要 0.9.6 以上版本支持，不要指望IE(<10)之類的瀏覽器能夠完美支持。
 
 下載看Demo 注意引用關係。
 

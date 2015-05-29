@@ -747,7 +747,7 @@ function DropMenuDirective($parse, $mdUtil, $mdTheming) {
 
 DropMenuDirective.$inject = ["$parse", "$mdUtil", "$mdTheming"];
 
-function DropOptionDirective($mdInkRipple, $mdUtil) {
+function DropOptionDirective($mdButtonInkRipple, $mdUtil) {
 
   OptionController.$inject = ["$element"];
   return {
@@ -796,7 +796,7 @@ function DropOptionDirective($mdInkRipple, $mdUtil) {
 //       });
 //     });
 
-    $mdInkRipple.attachButtonBehavior(scope, element);
+    $mdButtonInkRipple.attach(scope, element);
     configureAria();
 
     // function setOptionValue(newValue, oldValue) {
@@ -840,7 +840,7 @@ function DropOptionDirective($mdInkRipple, $mdUtil) {
   }
 
 }
-DropOptionDirective.$inject = ["$mdInkRipple", "$mdUtil"];
+DropOptionDirective.$inject = ["$mdButtonInkRipple", "$mdUtil"];
 
 function OptgroupDirective() {
   return {
