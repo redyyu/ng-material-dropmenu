@@ -7,7 +7,7 @@ There is a rough ngMaterial module cottaged from ng-select, For temporary use be
 
 This module is Keyborad sensitive and has backdrop support, just like ng-select, but no ng-model support.
 
-You must have ng-material 0.9.6.
+You must have *** ng-material 0.9.6. ***
 
 Demo is in the package.
 
